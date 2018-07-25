@@ -1,232 +1,25 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>
     <meta charset="UTF-8">
     <!-- generator meta tag -->
     <!-- leave this for stats and Silex version check -->
     <meta name="generator" content="Silex v2.2.7">
     <!-- End of generator meta tag -->
-    <link data-silex-static="" href="//editor.silex.me/static/2.7/normalize.css" rel="stylesheet">
-    <link data-silex-static="" href="//editor.silex.me/static/2.7/front-end.css" rel="stylesheet">
-    <script data-silex-static="" type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js"></script>
-    <script data-silex-static="" type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js"></script>
-    <script data-silex-static="" type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js"></script>
-    <script data-silex-static="" type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js"></script>
+    <link data-silex-static="" href="https://editor.silex.me/static/2.7/normalize.css" rel="stylesheet">
+    <link data-silex-static="" href="https://editor.silex.me/static/2.7/front-end.css" rel="stylesheet">
+    <script data-silex-static="" type="text/javascript" src="https://editor.silex.me/static/2.7/jquery.js"></script>
+    <script data-silex-static="" type="text/javascript" src="https://editor.silex.me/static/2.7/jquery-ui.js"></script>
+    <script data-silex-static="" type="text/javascript" src="https://editor.silex.me/static/2.7/pageable.js"></script>
+    <script data-silex-static="" type="text/javascript" src="https://editor.silex.me/static/2.7/front-end.js"></script>
 
-    <style type="text/css" class="silex-style">
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-        a:hover,
-        a:focus {
-            color: #277DB5;
-            text-decoration: underline;
-        }
-        
-        .normal {
-            color: #302E2C;
-            text-decoration: none;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-        }
-        
-        h1,
-        h2,
-        h3,
-        li {
-            line-height: 10px;
-        }
-        
-        h1,
-        h2,
-        h3 {
-            font-weight: bold;
-        }
-        
-        h1 {
-            font-size: 30px;
-            line-height: -10px;
-        }
-        
-        h2 {
-            font-size: 24.75px;
-            text-transform: uppercase;
-            font-size: 1.7em;
-            line-height: 20px;
-            padding: 30px 0px 0px;
-        }
-        
-        .sidebar ul {
-            margin: 5px;
-            padding: 0;
-        }
-        
-        .sidebar li {
-            line-height: 20px;
-            list-style-type: none;
-        }
-    </style>
+    <style type="text/css" class="silex-style">@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);a:hover,
+a:focus {color: #277DB5; text-decoration: underline;}.normal {color: #302E2C; text-decoration: none; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 14px;}h1,
+h2,
+h3,
+li {line-height: 10px;}h1,
+h2,
+h3 {font-weight: bold;}h1 {font-size: 30px; line-height: -10px;}h2 {font-size: 1.7em; text-transform: uppercase; line-height: 20px; padding: 30px 0px 0px;}.sidebar ul {margin: 5px; padding: 0;}.sidebar li {line-height: 20px; list-style-type: none;}</style>
     <script type="text/javascript" class="silex-script"></script>
-    <style class="silex-inline-styles" type="text/css">
-        .body-initial {
-            background-color: rgb(204, 204, 204);
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .body-initial {
-                background-color: rgba(255, 255, 255, 1);
-                border-color: #000000;
-            }
-        }
-        
-        .silex-id-1484573225219-1 {
-            top: 0px;
-            left: 0px;
-            min-width: 956px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1484573225219-1 {
-                top: 60px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1484573225218-0 {
-            width: 956px;
-            top: 0px;
-            left: 388px;
-            background-color: rgb(255, 255, 255);
-            border-top-width: 0px;
-            border-right-width: 1px;
-            border-bottom-width: 0px;
-            border-left-width: 0px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(48, 46, 44);
-            border-right-color: rgb(48, 46, 44);
-            border-bottom-color: rgb(48, 46, 44);
-            border-left-color: rgb(48, 46, 44);
-            min-height: 804px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1484573225218-0 {
-                min-height: 2371px;
-            }
-        }
-        
-        .silex-id-1443652013913-2 {
-            width: 248px;
-            top: 1px;
-            left: 0px;
-            background-color: rgba(0, 0, 0, 0.03529411764705882);
-            border-top-width: 0px;
-            border-right-width: 1px;
-            border-bottom-width: 0px;
-            border-left-width: 0px;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-top-color: rgb(48, 46, 44);
-            border-right-color: rgb(48, 46, 44);
-            border-bottom-color: rgb(48, 46, 44);
-            border-left-color: rgb(48, 46, 44);
-            min-height: 771px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1443652013913-2 {
-                top: 47px;
-                left: 11px;
-                width: 422px;
-                min-height: 803px;
-                border-color: #000000;
-            }
-        }
-        
-        .silex-id-1495933999975-5 {
-            min-height: 214px;
-            width: 218px;
-            top: 19px;
-            left: 19px;
-        }
-        
-        .silex-id-1443653612189-5 {
-            width: 199px;
-            top: 248px;
-            left: 26px;
-            border-top-color: rgb(0, 0, 0);
-            border-right-color: rgb(0, 0, 0);
-            border-bottom-color: rgb(0, 0, 0);
-            border-left-color: rgb(0, 0, 0);
-            min-height: 198px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1443653612189-5 {
-                top: 298px;
-                left: 11px;
-                width: 400px;
-                min-height: 472px;
-            }
-        }
-        
-        .silex-id-1495946038833-4 {
-            min-height: 316px;
-            width: 241px;
-            top: 450px;
-            left: 4px;
-        }
-        
-        .silex-id-1443652366341-4 {
-            width: 698px;
-            top: 1px;
-            left: 251px;
-            background-color: rgb(255, 255, 255);
-            min-height: 524px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1443652366341-4 {
-                top: 736px;
-                left: 11px;
-                width: 423px;
-                min-height: 1526px;
-            }
-        }
-        
-        .silex-id-1443652359020-3 {
-            width: 646px;
-            top: 32px;
-            left: 291px;
-            border-top-color: rgb(0, 0, 0);
-            border-right-color: rgb(0, 0, 0);
-            border-bottom-color: rgb(0, 0, 0);
-            border-left-color: rgb(0, 0, 0);
-            min-height: 470px;
-            background-color: transparent;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1443652359020-3 {
-                top: 693px;
-                left: 11px;
-                width: 423px;
-                min-height: 1496px;
-            }
-        }
-    </style>
+    <style class="silex-inline-styles" type="text/css">.body-initial {background-color: rgb(204, 204, 204);}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.body-initial {background-color: rgba(255,255,255,1); border-color: #000000;}}.silex-id-1484573225219-1 {top: 0px; left: 0px; min-width: 956px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484573225219-1 {top: 60px; left: 0px;}}.silex-id-1484573225218-0 {width: 956px; top: 0px; left: 388px; background-color: rgb(255, 255, 255); border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(48, 46, 44); border-right-color: rgb(48, 46, 44); border-bottom-color: rgb(48, 46, 44); border-left-color: rgb(48, 46, 44); min-height: 804px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1484573225218-0 {min-height: 2371px;}}.silex-id-1443652013913-2 {width: 248px; top: 1px; left: 0px; background-color: rgba(0,0,0,0.03529411764705882); border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(48, 46, 44); border-right-color: rgb(48, 46, 44); border-bottom-color: rgb(48, 46, 44); border-left-color: rgb(48, 46, 44); min-height: 771px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1443652013913-2 {top: 47px; left: 11px; width: 422px; min-height: 803px; border-color: #000000;}}.silex-id-1495933999975-5 {min-height: 214px; width: 218px; top: 19px; left: 19px;}.silex-id-1443653612189-5 {width: 199px; top: 248px; left: 26px; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); min-height: 198px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1443653612189-5 {top: 298px; left: 11px; width: 400px; min-height: 472px;}}.silex-id-1495946038833-4 {min-height: 316px; width: 241px; top: 450px; left: 4px;}.silex-id-1443652366341-4 {width: 701px; top: 1px; left: 251px; background-color: rgb(255, 255, 255); min-height: 710px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1443652366341-4 {top: 736px; left: 11px; width: 423px; min-height: 1526px;}}.silex-id-1443652359020-3 {width: 646px; top: 32px; left: 291px; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); min-height: 470px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1443652359020-3 {top: 693px; left: 11px; width: 423px; min-height: 1496px;}}</style>
 
 
 
@@ -236,12 +29,10 @@
 
 
 
-    <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgb(204, 204, 204)"},"silex-id-1443652013913-2":{"width":"248px","top":"1px","left":"0px","background-color":"rgba(0,0,0,0.03529411764705882)","border-top-width":"0px","border-right-width":"1px","border-bottom-width":"0px","border-left-width":"0px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(48, 46, 44)","border-right-color":"rgb(48, 46, 44)","border-bottom-color":"rgb(48, 46, 44)","border-left-color":"rgb(48, 46, 44)","min-height":"771px"},"silex-id-1443653612189-5":{"width":"199px","top":"248px","left":"26px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"198px"},"silex-id-1443652366341-4":{"width":"698px","top":"1px","left":"251px","background-color":"rgb(255, 255, 255)","min-height":"524px"},"silex-id-1443652359020-3":{"width":"646px","top":"32px","left":"291px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"470px","background-color":"transparent"},"silex-id-1484573225218-0":{"width":"956px","top":"0px","left":"388px","background-color":"rgb(255, 255, 255)","border-top-width":"0px","border-right-width":"1px","border-bottom-width":"0px","border-left-width":"0px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(48, 46, 44)","border-right-color":"rgb(48, 46, 44)","border-bottom-color":"rgb(48, 46, 44)","border-left-color":"rgb(48, 46, 44)","min-height":"804px"},"silex-id-1484573225219-1":{"top":"0px","left":"0px","min-width":"956px"},"silex-id-1484573325288-2":{"min-height":"100px","background-color":"transparent"},"silex-id-1495933999975-5":{"min-height":"214px","width":"218px","top":"19px","left":"19px"},"silex-id-1495946038833-4":{"min-height":"316px","width":"241px","top":"450px","left":"4px"}},"mobile":{"silex-id-1443652013913-2":{"top":"47px","left":"11px","width":"422px","min-height":"803px","border-width":"","border-style":"","border-color":"#000000","border-radius":""},"silex-id-1443653612189-5":{"top":"298px","left":"11px","width":"400px","min-height":"472px"},"silex-id-1443652359020-3":{"top":"693px","left":"11px","width":"423px","min-height":"1496px"},"silex-id-1443652366341-4":{"top":"736px","left":"11px","width":"423px","min-height":"1526px"},"body-initial":{"background-color":"rgba(255,255,255,1)","border-color":"#000000"},"silex-id-1484573225219-1":{"top":"60px","left":"0px"},"silex-id-1484573225218-0":{"min-height":"2371px"}},"componentData":{}}]
-    </script>
+    <script type="text/json" class="silex-json-styles">[{"desktop":{"body-initial":{"background-color":"rgb(204, 204, 204)"},"silex-id-1443652013913-2":{"width":"248px","top":"1px","left":"0px","background-color":"rgba(0,0,0,0.03529411764705882)","border-top-width":"0px","border-right-width":"1px","border-bottom-width":"0px","border-left-width":"0px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(48, 46, 44)","border-right-color":"rgb(48, 46, 44)","border-bottom-color":"rgb(48, 46, 44)","border-left-color":"rgb(48, 46, 44)","min-height":"771px"},"silex-id-1443653612189-5":{"width":"199px","top":"248px","left":"26px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"198px"},"silex-id-1443652366341-4":{"width":"701px","top":"1px","left":"251px","background-color":"rgb(255, 255, 255)","min-height":"710px"},"silex-id-1443652359020-3":{"width":"646px","top":"32px","left":"291px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"470px","background-color":"transparent"},"silex-id-1484573225218-0":{"width":"956px","top":"0px","left":"388px","background-color":"rgb(255, 255, 255)","border-top-width":"0px","border-right-width":"1px","border-bottom-width":"0px","border-left-width":"0px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","border-top-color":"rgb(48, 46, 44)","border-right-color":"rgb(48, 46, 44)","border-bottom-color":"rgb(48, 46, 44)","border-left-color":"rgb(48, 46, 44)","min-height":"804px"},"silex-id-1484573225219-1":{"top":"0px","left":"0px","min-width":"956px"},"silex-id-1484573325288-2":{"min-height":"100px","background-color":"transparent"},"silex-id-1495933999975-5":{"min-height":"214px","width":"218px","top":"19px","left":"19px"},"silex-id-1495946038833-4":{"min-height":"316px","width":"241px","top":"450px","left":"4px"}},"mobile":{"silex-id-1443652013913-2":{"top":"47px","left":"11px","width":"422px","min-height":"803px","border-width":"","border-style":"","border-color":"#000000","border-radius":""},"silex-id-1443653612189-5":{"top":"298px","left":"11px","width":"400px","min-height":"472px"},"silex-id-1443652359020-3":{"top":"693px","left":"11px","width":"423px","min-height":"1496px"},"silex-id-1443652366341-4":{"top":"736px","left":"11px","width":"423px","min-height":"1526px"},"body-initial":{"background-color":"rgba(255,255,255,1)","border-color":"#000000"},"silex-id-1484573225219-1":{"top":"60px","left":"0px"},"silex-id-1484573225218-0":{"min-height":"2371px"}},"componentData":{}}]</script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
-    <meta name="publicationPath" content="/api/1.0/github/exec/put///silex-templates/wip/cv1">
+    
 
 
 
@@ -255,11 +46,7 @@
 
 
     <meta name="website-width" content="960">
-    <style type="text/css" class="silex-style-settings">
-        .website-width {
-            width: 960px;
-        }
-    </style>
+    <style type="text/css" class="silex-style-settings">.website-width {width: 960px;}</style>
 
 
 
@@ -289,35 +76,14 @@
 
 
 
-    <script src="https://platform.linkedin.com/js/secureAnonymousFramework?v=0.0.2000-RC8.61108-1429&amp;"></script>
+    <script src="https://platform.linkedin.com/js/secureAnonymousFramework?v=0.0.2000-RC8.61108-1429&amp;" type="text/javascript"></script>
 
 
 
 
 
 
-    <style type="text/css">
-        .li-connect-widget .li-connect-mark {
-            background: url('https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png') -92px -42px no-repeat !important;
-            display: inline-block !important;
-            height: 16px !important;
-            text-decoration: none !important;
-            width: 16px !important;
-            vertical-align: middle !important;
-            *margin: 0 3px !important;
-            *vertical-align: bottom !important;
-        }
-        
-        .IN-widget .hovered .li-connect-mark {
-            cursor: pointer !important;
-        }
-        
-        .li-connect-widget.pending .li-connect-mark {
-            background: url('data:image/gif;base64,R0lGODlhEAAQAKIAAP///+bm5s7OzpycnGNjYwAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAAACwAAAAADgAQAAADNAi6MMNQOReBEG0CQta92cZ11seMZBlxClh55lu6Mi23GBQEsL3vOBDwx8MBiMei7ndLQhIAIfkEBQoAAAAsAgAAAA4ADgAAAyUIqiL7rzUIpRuDsouzVp33AdgIEYQJoKjJpi4cBOo8mzaN62MCACH5BAUKAAAALAAAAgAQAAwAAAMmCLoMIi2q92Sj0LK6QtDAMACeZ4li+UnoaGoiqBCEPNO1jOc6nwAAIfkEBQoAAAAsAgACAA4ADgAAAyUIEdD+ajH45KRu4Y2F4I3ngeJHmtswgICqYgTRulQcz7DN3lQCACH5BAUKAAAALAIAAAAMABAAAAMmCKoR+6w5GBtd9urNu/8XQVCCAIjiU5boOAzAaqbvG5tPDWv2kwAAIfkEBQoAAAAsAAACAA4ADgAAAyUIugwRLb4X2YR1UUBIXl33ceFImsswmKo6tqsgZK4sj/aM60sCACH5BAUKAAAALAAAAgAQAAwAAAMmCEqk/o8xSIFsFc7sxuBAEACel4li+VXoaHLiIwigM881cNM5DiYAIfkECQoAAAAsAAAAABAAEAAAAygIukDEkDkX1xhtVnBv3lwHMt4ICIKpoKjKpi6sjkEw17WK2zo//5EEADs=') no-repeat !important;
-            *background: url('https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png') -92px -42px no-repeat !important;
-            cursor: wait !important;
-        }
-    </style>
+    <style type="text/css">.li-connect-widget .li-connect-mark {background: url('https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png') -92px -42px no-repeat !important; display: inline-block !important; height: 16px !important; text-decoration: none !important; width: 16px !important; vertical-align: middle !important; *margin: 0 3px !important; *vertical-align: bottom !important;}.IN-widget .hovered .li-connect-mark {cursor: pointer !important;}.li-connect-widget.pending .li-connect-mark {background: url('data:image/gif;base64,R0lGODlhEAAQAKIAAP///+bm5s7OzpycnGNjYwAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAAACwAAAAADgAQAAADNAi6MMNQOReBEG0CQta92cZ11seMZBlxClh55lu6Mi23GBQEsL3vOBDwx8MBiMei7ndLQhIAIfkEBQoAAAAsAgAAAA4ADgAAAyUIqiL7rzUIpRuDsouzVp33AdgIEYQJoKjJpi4cBOo8mzaN62MCACH5BAUKAAAALAAAAgAQAAwAAAMmCLoMIi2q92Sj0LK6QtDAMACeZ4li+UnoaGoiqBCEPNO1jOc6nwAAIfkEBQoAAAAsAgACAA4ADgAAAyUIEdD+ajH45KRu4Y2F4I3ngeJHmtswgICqYgTRulQcz7DN3lQCACH5BAUKAAAALAIAAAAMABAAAAMmCKoR+6w5GBtd9urNu/8XQVCCAIjiU5boOAzAaqbvG5tPDWv2kwAAIfkEBQoAAAAsAAACAA4ADgAAAyUIugwRLb4X2YR1UUBIXl33ceFImsswmKo6tqsgZK4sj/aM60sCACH5BAUKAAAALAAAAgAQAAwAAAMmCEqk/o8xSIFsFc7sxuBAEACel4li+VXoaHLiIwigM881cNM5DiYAIfkECQoAAAAsAAAAABAAEAAAAygIukDEkDkX1xhtVnBv3lwHMt4ICIKpoKjKpi6sjkEw17WK2zo//5EEADs=') no-repeat !important; *background: url('https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png') -92px -42px no-repeat !important; cursor: wait !important;}</style>
 
 
 
@@ -330,14 +96,10 @@
 
 
 
-    <style id="current-page-style">
-        .page-index {
-            display: inherit;
-        }
-    </style>
-    <!-- Silex HEAD tag do not remove -->
-    <!-- End of Silex HEAD tag do not remove -->
-</head>
+    
+    
+<!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove --></head>
 
 <body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1484573225219-1 section-element" data-silex-id="silex-id-1484573225219-1">
@@ -366,7 +128,7 @@
                 </div>
                 <div data-silex-type="image" class="editable-style silex-id-1495946038833-4 image-element" data-silex-id="silex-id-1495946038833-4"><img src="baghdad-street-map--baghdad-iraq-road-map-art-on-color-jurq-studio%20-%20Copy2.jpg" class="silex-element-content"></div>
             </div>
-            <div data-silex-id="silex-id-1443652366341-4" class="editable-style silex-id-1443652366341-4 container-element paged-element hide-on-mobile page-index" data-silex-type="container">
+            <div data-silex-id="silex-id-1443652366341-4" class="editable-style silex-id-1443652366341-4 container-element paged-element hide-on-mobile page-index paged-element-visible" data-silex-type="container">
 
 
 
@@ -374,8 +136,7 @@
             <div data-silex-id="silex-id-1443652359020-3" class="editable-style silex-id-1443652359020-3 text-element" data-silex-type="text">
                 <div class="silex-element-content normal">
                     <h1>Mustafa Hammood</h1>
-                    <div>I'm an M.A.Sc. student working under Dr. Nicolas Jaeger in the MiNa Lab. My research interests include emerging silicon photonics technologies and integrated optics, specifically, design and fabrication of silicon photonics microring
-                        resonators (MRRs) for WDM telecom applications.</div>
+                    <div>I'm an M.A.Sc. student working under Dr. Nicolas Jaeger in the MiNa Lab. My research interests include emerging silicon photonics technologies and integrated optics, specifically, design and fabrication of silicon photonics microring resonators (MRRs) for WDM telecom applications.</div>
                     <h2 class="heading2">Resources</h2>
                     <h3 class="heading3">
                         <div>
@@ -407,15 +168,15 @@
                                 <div>
                                     <font size="2"><br></font>
                                 </div>
-                                <div>
-                                    <font size="2"><br></font>
+                                </div></div></h3><h2 class="heading2">Publications</h2><h3 class="heading3"><div><div><div>
+                                    
+                                </div>
+                                <div><ul><li><font size="2"><span style="font-weight: normal;">"Compact contra-directional-coupler-based filters for CWDM applications", IEEE Group IV Photonics Conference.&nbsp;</span><b style="">Mustafa&nbsp;Hammood,&nbsp;</b><span style="font-weight: 300;">Ajay Mistry, Minglei Ma, Lukas Chrostowski, and Nicolas A. F. Jaeger, August 2018.</span></font></li></ul><div><div><ul><li><font size="2" style="font-weight: normal;">"Nested silicon-on-insulator Vernier effect microring resonators", SPIE Photonics West Conference.</font><font size="2" style=""> Mustafa Hammood<span style="font-weight: normal;">, Ajay Mistry, Lukas Chrostowski, and Nicolas A. F. Jaeger, February 2019. Submitted</span></font></li></ul></div><ul><li><span style="font-weight: 300;"><font size="2">"FSR-free microring-based modulator", IEEE Group IV Photonics Conference. Ajay Mistry,&nbsp;<b>Mustafa&nbsp;Hammood</b>, Hossam Shoman, Lukas Chrostowski, and Nicolas A. F. Jaeger, August 2018.</font></span></li></ul></div><div><ul><li style=""><font size="2"><span style="font-weight: 300;">"FSR-free ring-based modulator for DWDM applications", IEEE Photonics Conference. Ajay Mistry,&nbsp;</span>Mustafa Hammood<span style="font-weight: 300;">, Lukas Chrostowski, and Nicolas A. F. Jaeger, September 2018.</span></font></li></ul></div>
+                                    
                                 </div>
                                 <div>
                                     <font size="2"><br></font>
-                                </div>
-                                <div>
-                                    <font size="2"><br></font>
-                                </div>
+                                </div><div><font size="2"><br></font></div>
                                 <div>
                                     <font size="2"><span style="font-weight: 300;">My work and projects can be found on my&nbsp;</span><u style="font-weight: 300;"><a href="https://mustafa-h.com/" style="">personal website</a>.</u></font>
                                 </div>
@@ -438,8 +199,7 @@
 
 
     <div class="silex-pages">
-        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable hide-on-mobile"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
-                class="silex-element-content"></div><a id="page-index" data-silex-type="page" class="page-element page-link-active">index</a><a id="page-components" data-silex-type="page" class="page-element">Components</a></div>
+        <div data-silex-type="image" data-silex-id="silex-id-hamburger-menu" class="menu-button editable-style silex-id-hamburger-menu image-element page-page-1 paged-element prevent-draggable prevent-resizable hide-on-mobile"><img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content"></div><a id="page-index" data-silex-type="page" class="page-element">index</a><a id="page-components" data-silex-type="page" class="page-element">Components</a></div>
 
 
 
@@ -504,6 +264,6 @@
 
 
 
-</body>
 
-</html>
+
+</body></html>
